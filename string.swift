@@ -1,7 +1,7 @@
 /*
- * @String扩展
- * @Date:2014/06/15
- */
+* @String扩展
+* @Date:2014/06/17
+*/
 import Cocoa
 
 extension String{
@@ -53,7 +53,7 @@ extension String{
         return countElements(self)
     }
     //截取字符串
-    func substr(range:Int[])->String{
+    func substr(range:Int...)->String{
         if range[0]==0{
             return self.substringToIndex(range[1])
         }else{
@@ -87,13 +87,13 @@ var test="yckit.com "
     test.hasEnd("com")
     test.length()
     test.size()
-    
+
 var r="卧槽"
     r.repeat(3)
-    
+
 var test2="DMKU.NET"
-    test2.substr([0,1])
-    test2.substr([1,2])
+    test2.substr(0,1)
+    test2.substr(1,2)
     test2.reverse()
-    
+
 
